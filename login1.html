@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ورود</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card bg-dark text-white shadow">
+          <div class="card-body">
+            <h3 class="text-center mb-4">ورود به حساب</h3>
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="email" class="form-label">ایمیل</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">رمز عبور</label>
+                <input type="password" class="form-control" id="password" required>
+              </div>
+              <button type="submit" class="btn btn-success w-100">ورود</button>
+              <div class="text-center mt-3">
+                <span>حساب ندارید؟</span>
+                <a href="login.html" class="text-decoration-none fw-bold text-info">ثبت‌نام کنید</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ساده‌ترین کنترل فرم -->
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      if (email && password) {
+        alert('ورود موفقیت‌آمیز بود!');
+        // اینجا می‌تونی ریدایرکت کنی یا عملیات ورود واقعی انجام بدی
+        // window.location.href = "dashboard.html";
+      } else {
+        alert('لطفاً اطلاعات را کامل وارد کنید.');
+      }
+    });
+  </script>
+</body>
+</html>

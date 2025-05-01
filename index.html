@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موبایل رفاه</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" style="border: none; box-shadow: none;">
+        <img src="./img/Menu (رسانیکا).png" alt="menu icon" style="width: 30px; height: auto;">
+      </button>         
+      
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" href="#">خانه</a>
+          </li>
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              دسته‌بندی محصولات
+            </a>
+            <ul class="dropdown-menu text-end">
+                        <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#">موبایل</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#apple">اپل</a></li>
+                            <li><a class="dropdown-item" href="#sumsong">سامسونگ</a></li>
+                            <li><a class="dropdown-item" href="#">ال‌جی</a></li>
+                            <li><a class="dropdown-item" href="#">نوکیا</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#">تبلت</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">اپل آیپد</a></li>
+                            <li><a class="dropdown-item" href="#">سامسونگ گلکسی تب</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#">لپ‌تاپ</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">ایسوس</a></li>
+                            <li><a class="dropdown-item" href="#">لنوو</a></li>
+                            <li><a class="dropdown-item" href="#">مک‌بوک</a></li>
+                          </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">کیس</a></li>
+                        <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#">موس و کیبورد</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">بی‌سیم</a></li>
+                            <li><a class="dropdown-item" href="#">باسیم</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#Accessories">لوازم جانبی</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">پاوربانک</a></li>
+                            <li><a class="dropdown-item" href="#">شارژر</a></li>
+                            <li><a class="dropdown-item" href="#">هدفون</a></li>
+                          </ul>
+                        </li>
+            
+                      </ul>
+                    </li>
+  
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">خرید اقساطی گوشی</a>
+          </li>
+  
+          <li class="nav-item mx-2">
+            <a class="nav-link text-danger fw-bold" href="#discounts">تخفیف ویژه</a>
+          </li>
+        </ul>
+        <form class="d-flex me-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="دنبال چی میگردی: قیمت موبایل..." aria-label="Search">
+          <button class="btn primary" type="submit">
+            <img src="./img/icons8-search-30.png" alt="image">
+          </button>
+        </form>
+        <button class="btn ms-2" id="toggleDark">
+          <img src="./img/icons8-dark-mode-45.png" alt="image">
+        </button>
+        <button class="btn btn-primary fw-bold"  onclick="location.href='login.html'">ورود/عضویت</button>
+      </div>
+    </div>
+  </nav>
+      <br>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/1-img-001.png" class="d-block w-100 rounded-4" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/2-img-002.png" class="d-block w-100 rounded-4" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+      <!-- Carousel برای محصولات اپل -->
+      <div id="apple" class="container my-5">
+        <h2 class="text-center mb-4">محصولات اپل</h2>
+        <div id="appleCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- اسلاید اول -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <!-- کارت ۱ -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card apple">
+                    <img src="./img/16p.jpg" class="card-img-top product-img" alt="iPhone 16 Pro">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">iPhone 16 Pro</h5>
+                      <p class="card-text text-success fw-bold">۵۸,۹۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- کارت ۲ -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card apple">
+                    <img src="./img/14.jpg" class="card-img-top product-img" alt="iPhone 14 Pro">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">iPhone 14 Pro</h5>
+                      <p class="card-text text-success fw-bold">۷۲,۵۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- کارت ۳ -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card apple">
+                    <img src="./img/13.jpg" class="card-img-top product-img" alt="iPhone 13">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">iPhone 13</h5>
+                      <p class="card-text text-success fw-bold">۴۹,۳۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- اسلاید دوم -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <!-- کارت ۴ -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card apple">
+                    <img src="./img/SE-1.jpg" class="card-img-top product-img" alt="iPhone SE 2022">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">iPhone SE 2022</h5>
+                      <p class="card-text text-success fw-bold">۲۷,۸۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- کارت ۵ -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card apple">
+                    <img src="./img/12.jpg" class="card-img-top product-img" alt="iPhone 12">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">iPhone 12</h5>
+                      <p class="card-text text-success fw-bold">۴۲,۰۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- کارت ۶ -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card apple">
+                    <img src="./img/15.jpg" class="card-img-top product-img" alt="iPhone 15">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">iPhone 15</h5>
+                      <p class="card-text text-success fw-bold">۸۵,۰۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- دکمه‌های کنترل -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#appleCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#appleCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+<div id="toast" class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999;">
+  <div class="toast align-items-center text-bg-success border-0 show" role="alert" aria-live="assertive" aria-atomic="true" style="display: none;">
+    <div class="d-flex">
+      <div class="toast-body">
+        محصول با موفقیت به سبد خرید اضافه شد!
+      </div>
+    </div>
+  </div>
+</div>
+      <br>
+      <div id="sumsong" class="container my-5">
+        <h2 class="text-center mb-4">محصولات سامسونگ</h2>
+        <div id="samsungCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+      
+            <!-- اسلاید اول -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <!-- کارت ۱ -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card samsung">
+                    <img src="./img/سامسونگ/s23ultra.jpg" class="card-img-top product-img" alt="Galaxy S23 Ultra">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Galaxy S23 Ultra</h5>
+                      <p class="card-text text-success fw-bold">۶۷,۰۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- کارت ۲ -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card samsung">
+                    <img src="./img/a54.jpg" class="card-img-top product-img" alt="Galaxy A54">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Galaxy A54</h5>
+                      <p class="card-text text-success fw-bold">۲۲,۵۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- کارت ۳ -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card samsung">
+                    <img src="./img/سامسونگ/SamsungM144G-ArcticBlue.png" class="card-img-top product-img" alt="Galaxy M14">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Galaxy M14</h5>
+                      <p class="card-text text-success fw-bold">۸,۹۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- اسلاید دوم -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <!-- کارت ۴ -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card samsung">
+                    <img src="./img/سامسونگ/3-2.png" class="card-img-top product-img" alt="Galaxy Z Flip 5">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Galaxy Z Flip 5</h5>
+                      <p class="card-text text-success fw-bold">۵۲,۰۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- کارت ۵ -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card samsung">
+                    <img src="./img/سامسونگ/34.jpg" class="card-img-top product-img" alt="Galaxy A34">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Galaxy A34</h5>
+                      <p class="card-text text-success fw-bold">۱۵,۰۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- کارت ۶ -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card samsung">
+                    <img src="./img/سامسونگ/14.jpg" class="card-img-top product-img" alt="Galaxy A14">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Galaxy A14</h5>
+                      <p class="card-text text-success fw-bold">۷,۵۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- دکمه‌های کنترل -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#samsungCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#samsungCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+      <br>
+      <div id="Accessories" class="container my-5">
+        <h2 class="text-center mb-4">لوازم جانبی</h2>
+        <div id="accessoriesCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- اسلاید اول -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card accessory">
+                    <img src="./img/لوازم جانبی/air.jpeg" class="card-img-top product-img" alt="AirPods Pro">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">AirPods Pro</h5>
+                      <p class="card-text text-success fw-bold">۹,۲۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card accessory">
+                    <img src="./img/لوازم جانبی/سری-شارژر-25ولت-سامسونگ-1.jpg" class="card-img-top product-img" alt="شارژر اصلی سامسونگ">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">شارژر سامسونگ ۲۵ وات</h5>
+                      <p class="card-text text-success fw-bold">۸۵۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card accessory">
+                    <img src="./img/لوازم جانبی/کابل.jpg" class="card-img-top product-img" alt="کابل USB-C">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">کابل USB-C اورجینال</h5>
+                      <p class="card-text text-success fw-bold">۴۵۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- اسلاید دوم -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card accessory">
+                    <img src="./img/لوازم جانبی/galaxy-buds-2-pro-2.jpg" class="card-img-top product-img" alt="Buds 2">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Galaxy Buds 2 Pro</h5>
+                      <p class="card-text text-success fw-bold">۶,۵۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card accessory">
+                    <img src="./img/لوازم جانبی/پاوربانک-سوپرفست-شارژ-اوفه-EOFE-G201-20000-میلی-آمپر-1.jpg" class="card-img-top product-img" alt="پاوربانک">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">پاوربانک ۲۰۰۰۰ میلی‌آمپر</h5>
+                      <p class="card-text text-success fw-bold">۱,۳۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                  <div class="card h-100 shadow-sm product-card accessory">
+                    <img src="./img/لوازم جانبی/هولدر-و-نگهدارنده-چند-کاره-موبایل.jpeg" class="card-img-top product-img" alt="هولدر">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">هولدر موبایل ماشین</h5>
+                      <p class="card-text text-success fw-bold">۴۰۰,۰۰۰ تومان</p>
+                      <button class="btn btn-success add-to-cart">افزودن به سبد خرید</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#accessoriesCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#accessoriesCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>      
+      <br>
+      <section id="discounts" class="container my-5">
+        <h2 class="text-center mb-4">🔥 تخفیف‌های ویژه</h2>
+        <div class="alert alert-danger text-center fs-5 fw-bold">
+          ⏳ تا پایان تخفیف: <span id="countdown"></span>
+        </div>
+        <div id="specialOffersCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card text-center border-danger">
+                <img src="./img/a54.jpg.png" class="card-img-top discount-img" alt="محصول ۱">
+                <div class="card-body">
+                  <h5 class="card-title">گوشی سامسونگ A54</h5>
+                  <p class="text-danger fw-bold">15,500,000تومان</p>
+                  <p class="text-muted text-decoration-line-through">22,500,000 تومان</p>
+                  <a href="#" class="btn btn-danger">خرید</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card text-center border-danger">
+                <img src="./img/Untitled-2.png"class="card-img-top discount-img" alt="محصول 2">
+                <div class="card-body">
+                  <h5 class="card-title">تبلت لنوو P11</h5>
+                  <p class="text-danger fw-bold">۶,۸۰۰,۰۰۰ تومان</p>
+                  <p class="text-muted text-decoration-line-through">۷,۴۰۰,۰۰۰ تومان</p>
+                  <a href="#" class="btn btn-danger">خرید</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card text-center border-danger">
+                <img src="./img/کیبورد.jpg" class="card-img-top discount-img" alt="محصول 3">
+                <div class="card-body">
+                  <h5 class="card-title">کیبورد </h5>
+                  <p class="text-danger fw-bold">۸۵۰,۰۰۰ تومان</p>
+                  <p class="text-muted text-decoration-line-through">۱,۱۵۰,۰۰۰ تومان</p>
+                  <a href="#" class="btn btn-danger">خرید</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#specialOffersCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#specialOffersCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+          </button>
+        </div>
+      </section>
+      <br>
+      <footer class="footer bg-light text-dark pt-4 pb-3 mt-5 border-top">
+        <div class="container">
+          <div class="row text-center text-md-start">
+      
+            <!-- درباره ما -->
+            <div class="col-12 col-md-3 mb-4">
+              <h6 class="fw-bold">درباره ما</h6>
+              <p class="small">فروشگاه تخصصی موبایل و لوازم جانبی با تضمین اصالت کالا و ارسال سریع.</p>
+            </div>
+      
+            <!-- لینک‌ها -->
+            <div class="col-6 col-md-3 mb-4">
+              <h6 class="fw-bold">لینک‌های مفید</h6>
+              <ul class="list-unstyled small">
+                <li><a href="#" class="text-decoration-none link-dark">قوانین سایت</a></li>
+                <li><a href="#" class="text-decoration-none link-dark">سوالات متداول</a></li>
+                <li><a href="#" class="text-decoration-none link-dark">تماس با ما</a></li>
+                <li><a href="#" class="text-decoration-none link-dark">درباره فروشگاه</a></li>
+              </ul>
+            </div>
+      
+            <!-- شبکه‌های اجتماعی -->
+            <div class="col-6 col-md-3 mb-4">
+              <h6 class="fw-bold">شبکه‌های اجتماعی</h6>
+              <ul class="list-unstyled small">
+                <li><a href="#" class="text-decoration-none link-dark"><i class="bi bi-instagram me-1"></i>اینستاگرام</a></li>
+                <li><a href="#" class="text-decoration-none link-dark"><i class="bi bi-telegram me-1"></i>تلگرام</a></li>
+                <li><a href="#" class="text-decoration-none link-dark"><i class="bi bi-whatsapp me-1"></i>واتساپ</a></li>
+              </ul>
+            </div>
+      
+            <!-- نقشه و نماد -->
+            <div class="col-12 col-md-3 mb-4">
+              <h6 class="fw-bold">موقعیت فروشگاه</h6>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6766276806064!2d51.3890208!3d35.6891976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0170f01f8a3f%3A0x660ae749d59bba6d!2z2KfZhNiq2YjZhCDYp9mE2YjZhtmI2KfZhCDZhdmI2YfZhg!5e0!3m2!1sen!2s!4v1681234567890!5m2!1sen!2s"
+                width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+      
+          <hr class="text-muted">
+          <p class="text-center small text-muted mb-0">© تمامی حقوق محفوظ است | طراحی توسط <strong>مهدی</strong></p>
+        </div>
+      </footer>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script>
+      const toggleBtn = document.getElementById('toggleDark');
+      toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+      });
+      const countdownElement = document.getElementById("countdown");
+let endTime = localStorage.getItem("offerEndTime");
+if (!endTime) {
+  endTime = new Date().getTime() + 60 * 60 * 60 * 1000;
+  localStorage.setItem("offerEndTime", endTime);
+} else {
+  endTime = parseInt(endTime); 
+}
+
+const countdownTimer = setInterval(function () {
+  const now = new Date().getTime();
+  const distance = endTime - now;
+
+  if (distance < 0) {
+    clearInterval(countdownTimer);
+    countdownElement.innerHTML = "تخفیف به پایان رسید!";
+    return;
+  }
+  const hours = Math.floor((distance / (1000 * 60 * 60)));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  countdownElement.innerHTML = `${hours} ساعت ${minutes} دقیقه ${seconds} ثانیه`;
+}, 1000);
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function () {
+      const toastEl = document.querySelector('#toast .toast');
+      toastEl.style.display = 'block';
+
+      setTimeout(() => {
+        toastEl.style.display = 'none';
+      }, 2500);
+    });
+  });
+  const navLinks = document.querySelectorAll('.nav-link');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      new bootstrap.Collapse(navbarCollapse).hide();
+    });
+  });
+    </script>
+    
+  </body>
+</html>

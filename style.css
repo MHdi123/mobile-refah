@@ -1,0 +1,300 @@
+/***********************************Mahdi akbari********************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root{
+    --color_07101D:#ffffff;
+    --dark-color: #161616;
+  
+    --body-font: "Open Sans";
+    --h1-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --smaller-font-size: 0.75rem;
+}
+body{
+    font-family: naznin;
+    background-color: var(--color_07101D);
+}
+@font-face{
+    font-family: naznin;
+    font-style: normal;
+    font-weight: 900;
+    src: url('./fonts/B\ Nazanin\ Outline_YasDL.com.ttf') format('ttf');
+}
+@font-face{
+    font-family: naznin;
+    font-style: normal;
+    font-weight: bold;
+    src: url('./fonts/B\ Nazanin\ Bold_YasDL.com.ttf') format('ttf');
+}
+.nav-link{
+    inset-inline: center;
+}
+/********************************ویترین***********************************/
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 2rem 0;
+  }
+  
+  .bd-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 1200px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .title-shop {
+    position: relative;
+    margin: 0 2.5rem;
+    color: rgb(0, 0, 0);
+  }  
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0.5rem 1rem #d1d9e6;
+  }
+  
+  .card:hover .card-name {
+    left: 0;
+  }
+  
+  .card:hover .card-img {
+    transform: rotate(30deg);
+    margin-left: 3.5rem;
+  }
+  
+  .card:hover .card-prices {
+    margin-left: 3.5rem;
+    padding: 0 1.5rem;
+  }
+  
+  article:nth-child(1) {
+    background-color: var(--first-color);
+  }
+  article:nth-child(2) {
+    background-color: var(--second-color);
+  }
+  article:nth-child(3) {
+    background-color: var(--third-color);
+  }
+  article:nth-child(4) {
+    background-color: var(--forth-color);
+  }
+  
+  .card-img {
+    width: 180px;
+    height: auto;
+    padding: 3rem 0;
+    transition: 0.5s;
+  }
+  
+  .card-name {
+    position: absolute;
+    left: -25%;
+    top: 0;
+    width: 3.5rem;
+    height: 100%;
+    text-align: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background:#2a9b50;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .card-icon {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+  }
+  
+  .card-icon:hover {
+    color: var(--accent-color);
+  }
+  
+  .card-prices {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  .card-price {
+    display: block;
+    text-align: center;
+  }
+  
+  .card-price-before {
+    font-size: var(--smaller-font-size);
+    color: var(--accent-color);
+    margin-bottom: 0.25rem;
+    text-decoration: line-through;
+  }
+  
+  .card-price-now {
+    font-size: var(--h3-font-size);
+    font-weight: bold;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    body {
+      margin: 0 0 0 0;
+    }
+  
+    .title-shop {
+      margin: 0.5rem;
+    }
+  
+    .bd-grid {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  /****************************logo***********************/
+  .navbar-brand{
+     background-image: url(./img/mobile_refah_logo_transparent.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 116px;
+    height: 91px;
+  }
+  /**********************************menu*************************/
+  .dropdown-item:hover{
+    color: #001eff;
+  }
+  .nav-link:hover{
+    color:#001eff;
+  }
+  .me-3 {
+    margin-right: 1rem !important;
+    margin: 32px;
+}
+/*********************button login********************/
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  right: 100%;
+  margin-top: -1px;
+  display: none;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+.dropdown-menu .dropdown-item {
+  text-align: center;
+}
+/*******************************dark mode***************************/
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .navbar {
+  background-color: #000000 !important;
+}
+
+body.dark-mode .dropdown-menu {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+body.dark-mode .dropdown-item {
+  color: #fff;
+}
+
+body.dark-mode .dropdown-item:hover {
+  background-color: #444;
+}
+
+body.dark-mode input,
+body.dark-mode .form-control {
+  background-color: #ffffff;
+  color: #fff;
+  border-color: #555;
+}
+
+body.dark-mode .btn-outline-dark {
+  color: #fff;
+  border-color: #fff;
+}
+body.dark-mode #toggleDark{
+  background-image: url(./img/icons8-dark-mode-25.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body.dark-mode .title-shop , .navbar-nav {
+  color: rgb(255, 255, 255);
+}  
+ 
+/**********************************تخفیفات***************************/
+  .discount-img {
+    height: 220px;
+    object-fit: contain;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  /*************************apple*************************************/
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+.cart-hover {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.product-card:hover .cart-hover {
+  bottom: 10px;
+}
+.cart-item img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+.product-img {
+  max-height: 200px;
+  object-fit: contain;
+}
+

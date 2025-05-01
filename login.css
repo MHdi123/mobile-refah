@@ -1,0 +1,104 @@
+body {
+    background-color: #f5f7fa;
+    font-family: sans-serif;
+  }
+
+  .card {
+    background: white;
+    border: 2px solid #0d6efd;
+    border-radius: 15px;
+  }
+
+  .form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-control {
+    border: 1px solid #0d6efd;
+    border-radius: 10px;
+    padding: 1rem 0.75rem 0.25rem;
+    font-size: 1rem;
+  }
+
+  .form-group label {
+    position: absolute;
+    top: 55%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 0 5px;
+    color: #0d6efd;
+    transition: 0.3s ease;
+    pointer-events: none;
+  }
+
+  .form-control:focus + label,
+  .form-control:not(:placeholder-shown) + label {
+    top: -5px;
+    font-size: 0.85rem;
+    color: #0d6efd;
+  }
+
+  .rules {
+    font-size: 0.9rem;
+    padding-right: 5px;
+  }
+
+  .rules span {
+    display: block;
+    margin-top: 3px;
+  }
+
+  .valid {
+    color: green;
+  }
+
+  .invalid {
+    color: red;
+  }
+  .rules {
+    font-size: 0.9rem;
+    padding-right: 5px;
+    margin: 8px 6px 9px 5px;
+}
+
+.mt-2 {
+    margin-top: 1.5rem !important;
+}
+.form-container {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid #0d6efd;
+    border-radius: 15px;
+  }
+  .form-floating label {
+    color: #6c757d;
+  }
+  .invalid {
+    color: red;
+    display: none;
+  }
+  .valid {
+    color: green;
+    display: none;
+  }
+  .form-control {
+    border: 1px solid #0d6efd;
+    border-radius: 10px;
+    padding: 2rem 0.75rem 0.25rem;
+    font-size: 1rem;
+  }
+  .form-group label {
+    position: absolute;
+    top: 36%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 0 5px;
+    color: #0d6efd;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
